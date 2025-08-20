@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<style>
+  body {
+    background-color: #2f3136;
+    color: #f2f2f2;
+    font-family: league_spartansemibold;
+    /* custom font swag */
+
+  }
+
+  div.bannerrow {
+    border-radius: 12px;
+    height: 270px;
+    padding: 10px;
+    overflow-x: none;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+
+  }
+
+  img.banner {
+    float: left;
+    border-radius: 12px;
+    width: 400px;
+    height: 250px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+
+  }
+
+  img.icon {
+    float: left;
+    border-radius: 12px;
+    width: 150px;
+    height: 150px;
+
+    position: relative;
+    z-index: 1;
+    top: 120px;
+    left: -420px;
+    right: 10px;
+    bottom: 10px;
+
+  }
+
+  div.topbar {
+    background-color: #40434a;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* height: 50px; */
+  }
+
+  button.img {
+    float: right;
+    font-size: 20px;
+    filter: invert(80%);
+    -webkit-filter: invert(80%);
+    font-family: league_spartansemibold;
+
+
+  }
+
+  b.settings {
+    position: relative;
+    top: -10px;
+    right: 10px;
+  }
+
+  button {
+    background: none;
+    border: none;
+
+  }
+
+  .container {
+    position: relative;
+    left: 500px;
+
+  }
+
+
+  .search-bar {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 60px;
+    background-color: #53565c;
+  
+  }
+
+  img.search {
+    width: 15px;
+    height: 15px;
+    filter: invert(80%);
+    -webkit-filter: invert(80%);
+  }
+
+  input.search {
+    background: transparent;
+    border: none;
+  }
+
+  b.title{
+    position: relative;
+    top: 6px;
+    font-size: 25px;
+  }
+
+</style>
+
+<head>
+  <link rel="stylesheet" href="/font/stylesheet.css"> <!-- Importing Custom Font -->
+
+  <title>Untitled Games</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W5N07KBBQ4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-W5N07KBBQ4');
+  </script>
+
+  <div class="topbar">
+   <b class="title">Untitled Games</b> 
+
+   <div class="container"> 
+      <form action="" class="search-bar">
+        <input class="search" type="text" placeholder="Search...">
+        <button class="search" type="submit"><img class="search" src="search-icon.png"></button>
+      </form>
+    </div> 
+
+    <button class="img" onclick="window.location.href='/settings.html'"><b class="settings">Settings</b><img
+        src="/images/settings.png">
+    </button>
+  </div>
+
+</head>
+
+<body>
+  <h1>Top Games</h1>
+
+  <div class="bannerrow">
+
+    <button onclick="window.location.href=''"><img class="banner" src="images/sapb.jpg"></button>
+     <button onclick="window.location.href=''"><img class="icon" src="images/sap.png"></button>
+
+     <button onclick="window.location.href=''"><img class="banner" src="images/sapb.jpg"></button>
+     <button onclick="window.location.href=''"><img class="icon" src="images/sap.png"></button>
+
+     <button onclick="window.location.href=''"><img class="banner" src="images/sapb.jpg"></button>
+     <button onclick="window.location.href=''"><img class="icon" src="images/sap.png"></button>
+
+
+  </div>
+
+  <h1>Recently Added</h1>
+
+  <div class="bannerrow">
+
+    <img class="banner" src="images/sapb.jpg">
+    <img class="icon" src="images/sap.png">
+
+    <img class="banner" src="images/sapb.jpg">
+    <img class="icon" src="images/sap.png">
+
+    <img class="banner" src="images/sapb.jpg">
+    <img class="icon" src="images/sap.png">
+
+
+  </div>
+
+</body>
+
+
+
+</html>

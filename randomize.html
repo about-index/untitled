@@ -1,0 +1,139 @@
+<script> 
+
+  // List of games
+  var links = [
+    "games/trickykeys.html",
+    "games/celeste.html",
+    "games/1v1lol.html",
+    "games/feedvid.html",
+    "games/fnaw.html",
+    "games/gunknight.html",
+    "games/picohot.html",
+    "games/retrobowl.html",
+    "games/tansun.html",
+    "games/silvernight.html",
+    "games/mario.html",
+     "games/pwr.html",
+     "games/vaportrails.html",
+    "games/venge.html",
+    "games/sonic1.html",
+    "games/lozoft.html",
+    "games/mariokartds.html",
+    "games/hardware.html"
+  ];
+    
+  function randomizeLink() {
+    // Get a random number between 0 and the number of links
+    var randomNumber = Math.floor(Math.random() * links.length);
+
+    // Get the link at the random index from the list
+    var randomLink = links[randomNumber];
+
+    // Redirect the browser to the random game
+    window.location.href = randomLink;
+  }
+</script>
+
+
+<style>
+   button {
+      background: none;
+      border: none;
+      padding: 15px;
+      font-family: arial, sans-serif;
+      color: #069;
+      cursor: pointer;
+      margin: 1px 1px;
+      display: inline-block;
+    }
+   button.randomize {
+      background-color: #27292e;
+      border: solid;
+      padding: 15px;
+      font-family: arial, sans-serif;
+      color: #069;
+      cursor: pointer;
+      margin: 15px 15px;
+      display: inline-block;
+    }
+    button.head {
+  
+      font-family: arial, sans-serif;
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 30px 25px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    button.img {
+      width: 10px;
+      height: 10px;
+      float: left;
+      filter: invert(80%);
+      -webkit-filter: invert(80%);
+      padding: 21px 20px;
+    }
+    button.img1 {
+      width: 10px;
+      height: 10px;
+      float: right;
+      filter: invert(80%);
+      -webkit-filter: invert(80%);
+      padding: 21px 30px;
+    }
+    .test {
+      text-align: center;
+      color: #f2f2f2;
+      font-size: 20px;
+    }
+    .topnav {
+         border: solid;
+      border-color: #484c54;
+      background-color: #27292e;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+
+  img.block {
+    width: 300px;
+    height: 300px;
+  padding: 30px 30px;
+  }
+  body {
+    background: #36393F;
+    font-family: arial, sans-serif;
+    color: #f2f2f2;
+  }
+  }
+</style>
+
+
+ <head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5N07KBBQ4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5N07KBBQ4');
+</script>
+   
+    <div class="topnav">
+
+      <button class="img"  onclick="window.location.href='/updates.html'"><img src="/images/test1.png"></button>
+      <button class="img" onclick="window.location.href='/suggestions.html'"><img src="/images/test3.png"><button>
+             <button class="head" onclick="window.location.href='/login.html'">Games</button>
+        <button class="head" onclick="window.location.href='/randomize.html'">Random Game</button>
+        <button class="head" onclick="window.location.href='/topgames.html'">Top Games</button>
+      <div class="test">
+        <b>Untilted Game Site</b>
+    </div> 
+    </div>
+      </head>
+
+<center><img class="block" src="images/mystery.png"></img></center>
+<center>Can't deside on what to play? Have the button pick a random game from the site!</center>
+<center><button class="randomize" onclick="randomizeLink()">Randomize!</button></center>

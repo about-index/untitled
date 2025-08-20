@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mario 64</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W5N07KBBQ4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-W5N07KBBQ4');
+</script>
+</head>
+  
+<body>
+  <style>
+    button {
+      background: none !important;
+      border: none;
+      padding: 15px;
+      font-family: arial, sans-serif;
+      color: #069;
+      cursor: pointer;
+      margin: 1px 1px;
+      display: inline-block;
+    }
+    button.head {
+  
+      font-family: arial, sans-serif;
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 30px 25px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    button.img {
+      width: 10px;
+      height: 10px;
+      float: left;
+      filter: invert(80%);
+      -webkit-filter: invert(80%);
+      padding: 21px 20px;
+    }
+    button.img1 {
+      width: 10px;
+      height: 10px;
+      float: right;
+      filter: invert(80%);
+      -webkit-filter: invert(80%);
+      padding: 11px 20px;
+    }
+    .test {
+      text-align: center;
+      color: #f2f2f2;
+      font-size: 20px;
+      
+      
+      
+    }
+    body {
+      background: #36393F;
+      font-family: arial, sans-serif;
+      color: #f2f2f2;
+    }
+    .topnav {
+         border: solid;
+      border-color: #484c54;
+      background-color: #27292e;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+
+    .main{
+      font-size: 20px;
+    overflow: hidden;
+      margin: 55px 16px;
+      padding: 30px 20px;
+       border: solid;
+      border-color: #484c54;
+       border-radius: 8px;
+       background-color: #27292e;
+    }
+
+    #myFrame{
+      margin: 20px 20px;
+    }
+    
+  </style>
+ 
+ 
+  <script>
+function fullscreenIframe() {
+  if(document.fullscreenEnabled){
+    var iframe = document.getElementById("myFrame");
+    var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+    var docElm = iframeDoc.documentElement;
+    if (docElm.requestFullscreen) {
+    docElm.requestFullscreen();
+    } else if (docElm.webkitRequestFullscreen) { /* Safari */
+    docElm.webkitRequestFullscreen();
+    } else if (docElm.msRequestFullscreen) { /* IE11 */
+    docElm.msRequestFullscreen();
+    }
+  }
+}
+
+ 
+</script>
+
+  <head>
+    <div class="topnav">
+
+      <button class="img"  onclick="window.location.href='/updates.html'"><img src="/images/test1.png"></button>
+      <button class="img" onclick="window.location.href='/suggestions.html'"><img src="/images/test3.png"><button>
+             <button class="head" onclick="window.location.href='/login.html'">Games</button>
+        <button class="head" onclick="window.location.href='/randomize.html'">Random Game</button>
+        <button class="head" onclick="window.location.href='/topgames.html'">Top Games</button>
+      <div class="test">
+        <b>Untilted Game Site</b>
+      </div>
+    </div> 
+  </head>
+  
+  <body>
+    <div class= "main"> 
+      <b>Mario 64</b> 
+      <hr class="solid"> 
+    </hr>
+  <center><iframe allowfullscreen="true" id="myFrame" src="/emulator/roms/mario64.html" style="border:none;" height="650" width="650" scrolling="yes"></iframe> </center>
+      <button class="img1" onclick="fullscreenIframe()"><img src="/images/fullscreen.png"></button>
+
+      <b>DESCRIPTION</b>
+    <p>Mario 64 is a classic 3D platform game developed and published by Nintendo for the Nintendo 64 console. It was released in 1996 and is widely considered one of the greatest video games of all time. The game features Mario as the main protagonist, who must navigate a series of levels and collect power stars to rescue Princess Peach from the clutches of the nefarious Bowser. The game introduces many new gameplay elements, such as a free-roaming 3D environment, and is known for its revolutionary camera system and tight controls. Mario 64 is a must-play for any fan of platformers and a true classic of the genre.</p>
+    </div>
+    
+    
+
+    
+  </body>
+</html>
